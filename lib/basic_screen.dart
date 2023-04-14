@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_layout/immutable_widget.dart';
 import 'package:flutter_layout/text_layout.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'app_drawer.dart';
 
 class BasicScreen extends StatelessWidget {
   @override
@@ -26,14 +27,9 @@ class BasicScreen extends StatelessWidget {
           TextLayout(),
         ],
       ),
-      drawer: Drawer(
-        child: Container(
-          color: Colors.brown.shade50,
-          child: Center(
-            child: Text("I'm a Drawer!"),
-          ),
-        ),
-      ),
-    );
+
+      drawer: AppDrawer(),
+          );
+ 
   }
 }
